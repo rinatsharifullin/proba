@@ -67,6 +67,15 @@ li a:hover, li a:active {
 
 
 @media only screen and (min-width: 768px){
+	li a:link, li a:visited{
+		font-size:1.3em;
+	}
+}
+
+
+
+@media only screen and (min-width: 1366px){
+	
 	ul{
 		width:80%;
 		margin:auto;
@@ -79,19 +88,11 @@ li a:hover, li a:active {
 	}
 	li a:link, li a:visited{
 		width:95%;
-		font-size:1.3em;
+		font-size:1em;
 		
 	}
 	li a:hover, li a:active {
 		box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
-	}
-}
-
-
-
-@media only screen and (min-width: 1366px){
-	li a:link, li a:visited{
-		font-size:1em;
 	}
 }
 
