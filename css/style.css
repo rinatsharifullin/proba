@@ -5,7 +5,7 @@ body{
 	padding:0;
 	margin:0;
 	font-family: "Rufina", serif;
-	font-size:2vw;
+	font-size:20px;
 	line-height:1.5;
 	background-image:url("../images/backgroung.png");
 	background-attachment:fixed;
@@ -29,7 +29,8 @@ ul{
 	list-style: none;
 	padding:0;
 	margin:0;
-	justify-content:space-around;
+	
+	height:100vh;
 }
 
 li{
@@ -39,21 +40,17 @@ li{
 }
 
 li a:link, li a:visited{
-	border:1px solid #ccc;
-	width:100%;
-	display:inline-block;
-	border-radius:0.5vw;
+	
 	text-decoration:none;
 	font-size:3em;
 	color:#707070;
 	text-transform:uppercase;
-	background-color:white;
+	
 }
 
 li a:hover, li a:active {
 	color:#000;
 	border-bottom:1px solid red;
-	transition:border-bottom 0.5s;
 }
 
 
@@ -68,7 +65,7 @@ li a:hover, li a:active {
 
 @media only screen and (min-width: 768px){
 	li a:link, li a:visited{
-		font-size:1.3em;
+		font-size:2em;
 	}
 }
 
@@ -87,10 +84,17 @@ li a:hover, li a:active {
 		
 	}
 	li a:link, li a:visited{
-		width:95%;
-		font-size:1em;
-		
-	}
+	border:1px solid #ccc;
+	width:95%;
+	display:inline-block;
+	border-radius:0.5vw;
+	text-decoration:none;
+	font-size:1.3em;
+	color:#707070;
+	text-transform:uppercase;
+	background-color:white;
+}
+	
 	li a:hover, li a:active {
 		box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
 	}
