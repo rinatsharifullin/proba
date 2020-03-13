@@ -17,7 +17,7 @@ main{
 /* Styling menu icon for mobile and tablet version */
 #mobileIcon{
 	cursor:pointer;
-	font-size:1.3em;
+	font-size:3em;
 	text-align:center;
 	margin:0;
 }
@@ -43,7 +43,7 @@ li a:link, li a:visited{
 	display:inline-block;
 	border-radius:0.5vw;
 	text-decoration:none;
-	font-size:1.3em;
+	font-size:3em;
 	color:#707070;
 	text-transform:uppercase;
 	background-color:white;
@@ -69,6 +69,7 @@ li a:hover, li a:active {
 	}
 	li a:link, li a:visited{
 		width:95%;
+		font-size:1.3em;
 		
 	}
 	li a:hover, li a:active {
