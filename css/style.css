@@ -29,8 +29,8 @@ ul{
 	list-style: none;
 	padding:0;
 	margin:0;
-	
 	height:80vh;
+	
 }
 
 li{
@@ -70,6 +70,7 @@ li a:hover, li a:active {
 		margin:auto;
 		display:flex;
 		flex-wrap:nowrap;
+		height:auto;
 	}
 	#mobileIcon{
 		display:none;
