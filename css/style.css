@@ -1,0 +1,271 @@
+/* Font importing from Google font */
+@import url('https://fonts.googleapis.com/css?family=Rufina&display=swap');
+/* Styling body */
+body{
+	padding:0;
+	margin:0;
+	font-family: "Rufina", serif;
+	font-size:2vw;
+	line-height:1.5;
+	background-image:url("../images/backgroung.png");
+	background-attachment:fixed;
+}
+/* Styling main container */
+main{
+	height:100vh;
+}
+/* Styling menu icon for mobile and tablet version */
+#mobileIcon{
+	cursor:pointer;
+	font-size:1.3em;
+	text-align:center;
+	margin:0;
+}
+/* Styling navigation */
+ul{
+	display:none;
+	flex-flow:wrap;
+	list-style: none;
+	padding:0;
+	margin:0;
+	justify-content:space-around;
+}
+
+li{
+	flex:1 1365px;
+	text-align:center;
+	box-sizing:border-box;
+}
+
+li a:link, li a:visited{
+	border:1px solid #ccc;
+	width:100%;
+	display:inline-block;
+	border-radius:0.5vw;
+	text-decoration:none;
+	font-size:1.3em;
+	color:#707070;
+	text-transform:uppercase;
+	background-color:white;
+}
+
+li a:hover, li a:active {
+	color:#000;
+	border-bottom:1px solid red;
+	transition:border-bottom 0.5s;
+}
+
+/* Styling for tablet and desktop versions */
+@media only screen and (min-width: 1366px){
+	ul{
+		width:80%;
+		margin:auto;
+		display:flex;
+		flex-wrap:nowrap;
+	}
+	#mobileIcon{
+		display:none;
+		
+	}
+	li a:link, li a:visited{
+		width:95%;
+		
+	}
+	li a:hover, li a:active {
+		box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
+	}
+}
+
+
+
+
+
+li{
+	/* flex:1; */
+}
+h1{
+	/* text-align:center;
+	text-transform:uppercase;
+	font-weight:800; */
+}
+h2{
+	text-align:center;
+}
+
+/*Section Styling*/
+section, .container {
+	width:100%;
+	border:1px solid #ccc;
+	border-radius:15px;
+	box-shadow: 2px 2px 5px rgba(32,33,36,0.28);
+	padding:1% 1%;
+	margin: 0 0 2% 0;
+	background-color:white;
+	box-sizing: border-box;
+}
+section p:first-line {text-indent:5%;}
+img{
+	float:right;
+	box-shadow: 2px 2px 5px rgba(32,33,36,0.28);
+	max-width:100%;
+	height: auto;
+
+}
+#examplelink{
+	float:none;
+}
+.date{
+	color:gray;
+	background-image:url("../images/calendar-alt.svg");
+	background-repeat:no-repeat;
+	
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+/*Contact form styling*/
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+	input[type=submit] {
+	  background-color: rgba(32,33,36,0.28);
+	  color: black;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: gray;
+	  color:white;
+	}
+
+
+
+
+
+/* Page name animation */
+#pagename{
+	opacity:0;
+	animation: fil 2s ease forwards;
+}
+
+@keyframes fil{
+	100%{opacity:1;}
+}
+
+/* SVG display text styling container */
+.displaytext{
+	width:100%;
+	height:100vh;
+}
+
+/* About page styling */
+
+.travel{
+	width:100%;
+	height:100vh;
+	border:solid 1px gold;
+	display:flex;
+	flex-flow:wrap row;
+	justify-content:center;
+	
+	align-content:flex-start;
+	
+}
+.travel img{
+	flex:0 1 33.33%;
+	width:100px;
+
+}
+
+
+
+/* About page text animation */
+
+#logo{
+	/* position:relative;
+	top:10vh;
+	left:50%;
+	transform:translate(-50%, -50%); */
+	animation: fil2 0.5s ease forwards 3s;
+}
+#logo path{
+	stroke-dasharray:300;
+	stroke-dashoffset:300;
+	animation:anim2 2s ease-in-out forwards 1s;
+}
+
+
+@keyframes anim2{
+	to{
+		stroke-dashoffset:0;
+	}
+}
+@keyframes fil2{
+	from{
+		fill:transparent;
+	}
+	to{
+		fill:#6b8fc6;
+	}
+}
+
+
+
+/* Style fixed background of about page */
+
+ .wrapper {
+  height: 1000px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  }
+  .fixed {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%; 
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  display: table;
+  }
+  .fixed h2 {
+  display: table-cell;
+  vertical-align: middle;
+  }
+  .scroll {
+  text-align:center;
+  padding: 10px 70px;
+  color: #fff;
+  }
+  .one {
+  background-image: url("../images/hobby/travel/botanicgarden-d.jpg")
+  }
+  .two {
+  background-image: url("../images/hobby/travel/botanic-d.jpg")
+  }
+  .three {
+  background-image: url("../images/hobby/travel/neftekamsk-d.jpg")
+  }
+
+
+
+
+
