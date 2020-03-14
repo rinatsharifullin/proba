@@ -63,9 +63,39 @@ footer{
 }
 
 
+.desktopfooter{
+		flex-flow: row;
+		justify-content:space-between;
+	}
 
-
-
+.desktopul{
+		width:80%;
+		margin:auto;
+		display:flex;
+		flex-wrap:nowrap;
+		height:auto;
+	}
+	.desktopmobileIcon{
+		display:none;
+		
+	}
+	.desktopli a:link, .desktopli a:visited{
+	border:1px solid #ccc;
+	width:95%;
+	display:inline-block;
+	border-radius:0.5vw;
+	text-decoration:none;
+	font-size:1.3em;
+	color:#707070;
+	text-transform:uppercase;
+	background-color:white;
+}
+	
+	.desktopli a:hover, .desktopli a:active {
+		box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
+		color:#000;
+		border-bottom:1px solid red;
+	}
 
 
 

@@ -70,11 +70,74 @@ function menuState(){
 	});
 }
 function detectDevice(){
-	window.addEventListener("resize", function(){
+	/* window.addEventListener("resize", function(){ */
 		if(window.innerWidth < window.innerHeight){
-			document.getElementById("desktopStyling").disabled = true;
+			removeClass('myfooter');
+			removeClass('navigation');
+			removeClass('mobileIcon');
+			removeClass('home');
+			removeClass('work');
+			removeClass('blog');
+			removeClass('about');
+			removeClass('contact');
+			
+			/* document.getElementById("desktopStyling").disabled = true; */
 		}else{
-			document.getElementById("desktopStyling").disabled = false;
+			/* document.getElementById("desktopStyling").disabled = false; */
+			addClass('desktopfooter', 'myfooter');
+			addClass('desktopul', 'navigation');
+			addClass('desktopmobileIcon', 'mobileIcon');
+			addClass('desktopli', 'home');
+			addClass('desktopli', 'work');
+			addClass('desktopli', 'blog');
+			addClass('desktopli', 'about');
+			addClass('desktopli', 'contact');
+			
 	}
-	})
+	/* }) */
+}
+
+
+/* Togglr class name */
+function toggleClass(myclass, myid){
+	var element = document.getElementById(myid);
+	console.log(element);
+	if (element.classList) {
+	  element.classList.toggle(myclass);
+	} else {
+	  // For IE9
+	  var classes = element.className.split(" ");
+	  var i = classes.indexOf(myclass);
+
+	  if (i >= 0)
+		classes.splice(i, 1);
+	  else
+		classes.push(myclass);
+		element.className = classes.join(" ");
+	}
+
+}
+
+
+function addClass(myclass, myid) {
+  var element = document.getElementById(myid);
+	console.log(element);
+	if (element.classList) {
+	  element.classList.add(myclass);
+	} else {
+	  // For IE9
+	  var classes = element.className.split(" ");
+	  var i = classes.indexOf(myclass);
+
+	  if (i >= 0)
+		classes.splice(i, 1);
+	  else
+		classes.push(myclass);
+		element.className = classes.join(" ");
+	}
+}
+
+function removeClass(myid) {
+  var element = document.getElementById(myid);
+  element.className = element.className.replace(/\bmystyle\b/g, "");
 }
