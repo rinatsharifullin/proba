@@ -24,12 +24,12 @@ main{
 }
 /* Styling navigation */
 ul{
-	display:none;
-	flex-flow:wrap;
-	list-style: none;
+	display:none; /* In mobile version initial menu display hidden, visible - flex. Will be visible by clicking on icon, js take care of visibility */
+	flex-flow:wrap; /* I kept row wrap property to stretch menu buttoms along Y axels. */
+	list-style: none; /* Remove dots in front of li */
 	padding:0;
 	margin:0;
-	height:80vh;
+	height:80vh; /* Occupied all height, but left breating space for menu icon */
 	
 }
 
