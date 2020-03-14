@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	mobileMenu();
 	openMap();
 	closeMap();
+	detectDevice();
 });
 
 
@@ -69,7 +70,11 @@ function menuState(){
 	});
 }
 function detectDevice(){
-	if(window.innerWidth < window.innerHeight){
-		document.getElementById("desktopStyling").disabled = true;
+	window.addEventListener("resize", function(){
+		if(window.innerWidth < window.innerHeight){
+			document.getElementById("desktopStyling").disabled = true;
+		}else{
+			document.getElementById("desktopStyling").disabled = false;
 	}
+	})
 }
