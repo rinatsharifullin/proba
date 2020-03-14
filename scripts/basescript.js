@@ -2,6 +2,7 @@
 /* This function provide waiting time till content loaded */
 
 document.addEventListener('DOMContentLoaded', function(){
+	alert(navigator.platform);
 	menuState();
 	mobileMenu();
 	openMap();
