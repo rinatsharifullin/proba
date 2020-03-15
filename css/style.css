@@ -62,24 +62,83 @@ footer{
 	margin:1vw;
 }
 
+/* Modal map styling */
+#mymap, #myemail{
+	display:none;
+	width:100%;
+	height:50%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	text-align:center;
+}
+/* Map close button styling */
+.close{
+	cursor:pointer;
+	font-size:3em;
+}
 
-.desktopfooter{
+
+
+
+
+/* Styling for tablet and desktop versions */
+@media only screen and (min-width: 360px){
+	footer{
 		flex-flow: row;
 		justify-content:space-between;
 	}
+}
 
-.desktopul{
+/*Styling Home page SVG text*/
+#sticky{
+	width:100vw;
+	height:100vh;
+}
+#svg4540{
+	float:none;
+	position:sticky;
+	top: 5%;
+	
+}
+#stickyimg{
+	float:none;
+	margin:auto;
+	position:sticky;
+	top: 80%;
+	left:50%;
+	transform:translate(-50%,0);
+	box-shadow:none;
+	opacity:0;
+	
+}
+/* 	.path {
+	  stroke-dasharray: 2000;
+	  stroke-dashoffset: 2000;
+	  animation: dash 5s linear  forwards ;
+	} */
+
+/* 	@keyframes dash {
+	  
+	  to {
+		stroke-dashoffset: 0;
+	  }
+	} */
+@media only screen and (min-width: 768px){
+	
+	ul{
 		width:80%;
 		margin:auto;
 		display:flex;
 		flex-wrap:nowrap;
 		height:auto;
 	}
-	.desktopmobileIcon{
+	#mobileIcon{
 		display:none;
 		
 	}
-	.desktopli a:link, .desktopli a:visited{
+	li a:link, li a:visited{
 	border:1px solid #ccc;
 	width:95%;
 	display:inline-block;
@@ -91,11 +150,19 @@ footer{
 	background-color:white;
 }
 	
-	.desktopli a:hover, .desktopli a:active {
+	li a:hover, li a:active {
 		box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
 		color:#000;
 		border-bottom:1px solid red;
 	}
+}
+
+
+
+@media only screen and (min-width: 1366px){
+	
+	
+}
 
 
 
@@ -106,20 +173,7 @@ footer{
 
 
 /* ------------------------------------------------------------------------- */
-#mymap{
-	display:none;
-	width:100%;
-	height:50%;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
-	text-align:center;
-}
-.close{
-	cursor:pointer;
-	font-size:3em;
-}
+
 
 
 
