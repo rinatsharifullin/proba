@@ -44,7 +44,7 @@ function navVisibility(state){
 function menuState(){
 	window.addEventListener("resize", function(){
 		/* If window size over 768px - display nav menu */
-		if (window.innerWidth > '768'){
+		if (window.innerWidth >= '768'){
 			navVisibility('visible');
 		}else{
 			navVisibility('hidden');
