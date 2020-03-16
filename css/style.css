@@ -23,7 +23,7 @@ main{
 	padding-left:3vw;
 }
 /* Styling navigation */
-ul{
+#navigation{
 	display:none; /* In mobile version initial menu display hidden, visible - flex. Will be visible by clicking on icon, js take care of visibility */
 	flex-flow:wrap; /* I kept row wrap property to stretch menu buttoms along Y axels. */
 	list-style: none; /* Remove dots in front of li */
@@ -33,13 +33,13 @@ ul{
 	
 }
 
-li{
+#navigation li{
 	flex:1 767px;
 	text-align:center;
 	box-sizing:border-box;
 }
 
-li a:link, li a:visited{
+#navigation li a:link, #navigation li a:visited{
 	
 	text-decoration:none;
 	font-size:2.5em;
@@ -48,7 +48,7 @@ li a:link, li a:visited{
 	
 }
 
-li a:hover, li a:active {
+#navigation li a:hover, #navigation li a:active {
 	color:#000;
 	border-bottom:1px solid red;
 }
@@ -83,13 +83,7 @@ footer{
 
 
 
-/* Styling for tablet and desktop versions */
-@media only screen and (min-width: 360px){
-	footer{
-		flex-flow: row;
-		justify-content:space-between;
-	}
-}
+
 
 /*Styling Home page SVG text*/
 #sticky{
@@ -125,9 +119,17 @@ footer{
 		stroke-dashoffset: 0;
 	  }
 	} */
+	
+/* Styling for tablet and desktop versions */
+@media only screen and (min-width: 360px){
+	footer{
+		flex-flow: row;
+		justify-content:space-between;
+	}
+}
 @media only screen and (min-width: 768px){
 	
-	ul{
+	#navigation{
 		width:80%;
 		margin:auto;
 		display:flex;
@@ -138,7 +140,7 @@ footer{
 		display:none;
 		
 	}
-	li a:link, li a:visited{
+	#navigation li a:link, #navigation li a:visited{
 	border:1px solid #ccc;
 	width:95%;
 	display:inline-block;
@@ -150,7 +152,7 @@ footer{
 	background-color:white;
 }
 	
-	li a:hover, li a:active {
+	#navigation li a:hover, #navigation li a:active {
 		box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
 		color:#000;
 		border-bottom:1px solid red;
